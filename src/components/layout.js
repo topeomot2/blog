@@ -43,17 +43,13 @@ const Layout = ({ pageTitle, children }) => {
           </div>
         </div>
       </nav>
-      <div className="container">
-        <div className="columns is-mobile">
-          <div className="column is-three-fifths is-offset-one-fifth">
-          <header className="title is-2">{data.site.siteMetadata.title}</header>
-      
+ 
+        <div className="columns">
+          <div className="column is-6 is-offset-3">
           <main>
-        <h1 className="title">{pageTitle}</h1>
             {children}
             </main>
             </div>
-        </div>
         </div>
       
     </div>
