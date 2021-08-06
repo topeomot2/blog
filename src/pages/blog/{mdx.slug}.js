@@ -6,10 +6,13 @@ import Layout from '../../components/layout'
 const BlogPost = ({data}) => {
   return (
     <Layout pageTitle={data.mdx.frontmatter.title}>
-      <p>{data.mdx.frontmatter.date}</p>
+      <div className="title has-text-warning"  style={{ marginTop: "20px",marginBottom:"5px" }}>{data.mdx.frontmatter.title}</div>
+      {data.mdx.frontmatter.date}
+      <div style={{marginTop:"40px"}}>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>
+      </div>
     </Layout>
   )
 }

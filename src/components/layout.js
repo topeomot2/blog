@@ -19,7 +19,7 @@ const Layout = ({ pageTitle, children }) => {
       <nav className="navbar is-dark" style={{borderBottom: "1px solid #9aa0a6", justifyContent:"center"}} role="navigation" aria-label="main navigation">
 
         <div className="navbar-brand column is-2" data-target="navbarMenu">
-          <a className="navbar-item is-size-3 is-pulled-left" style={{fontFamily: "'Exo 2', sans-serif"}} href="https://bulma.io">
+          <a className="navbar-item is-size-3 is-pulled-left" style={{fontFamily: "'Exo 2', sans-serif"}} href="https://topeomot.com">
             TOPEOMOT
           </a>
           <a role="button" className="navbar-burger" aria-label="menu" aria-expanded="false">
