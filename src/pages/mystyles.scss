@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:ital,wght@1,600&display=swap');
+
+$title-font: 'Exo 2', sans-serif;
+
+
+// If need, change your variables before importing Bulma
+$dark-bg: #202124;
+$font-color: #e8eaed;
+$title-color: #ffffff;
+
+$body-background-color: $dark-bg;
+$body-color: $font-color;
+$title-family: $title-font;
+
+$navbar-item-color: #ffffff;
+
+@import "~bulma/bulma.sass";
