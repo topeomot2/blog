@@ -32,6 +32,11 @@ const IndexPage = ({data}) => {
               </Link>
             </div>
             {node.frontmatter.date}
+            <div>{node.frontmatter.tags.map(tag => (
+              <>
+              <span class="tag is-success">#{tag}</span><span> </span>
+              </>
+            ))}</div>
             <div>{node.frontmatter.description}</div>
           </article>
         ))
@@ -50,6 +55,7 @@ export const query = graphql`
           date(formatString: "MMMM D, YYYY")
           title
           description
+          tags
         }
         id
         slug

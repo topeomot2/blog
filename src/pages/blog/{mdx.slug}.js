@@ -8,6 +8,11 @@ const BlogPost = ({data}) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <div className="title has-text-warning"  style={{ marginTop: "20px",marginBottom:"5px" }}>{data.mdx.frontmatter.title}</div>
       {data.mdx.frontmatter.date}
+      <div>{data.mdx.frontmatter.tags.map(tag => (
+              <>
+              <span class="tag is-success">#{tag}</span><span> </span>
+              </>
+            ))}</div>
       <div className="content" style={{marginTop:"40px"}}>
       <MDXRenderer>
         {data.mdx.body}
@@ -23,6 +28,7 @@ export const query = graphql`
       frontmatter {
         title
         date(formatString: "MMMM D, YYYY")
+        tags
       }
       body
     }
