@@ -8,7 +8,7 @@ const BlogPost = ({data}) => {
     <Layout pageTitle={data.mdx.frontmatter.title}>
       <div className="title has-text-warning"  style={{ marginTop: "20px",marginBottom:"5px" }}>{data.mdx.frontmatter.title}</div>
       {data.mdx.frontmatter.date}
-      <div style={{marginTop:"40px"}}>
+      <div class="content" style={{marginTop:"40px"}}>
       <MDXRenderer>
         {data.mdx.body}
       </MDXRenderer>

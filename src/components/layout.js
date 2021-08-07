@@ -28,9 +28,9 @@ const Layout = ({ pageTitle, children }) => {
             <span aria-hidden="true"></span>
           </a>
         </div>
-        <div class="navbar-menu column is-4" id="navbarMenu">
+        <div className="navbar-menu column is-4" id="navbarMenu">
 
-          <div class="navbar-end">
+          <div className="navbar-end">
           <Link className="navbar-item" to="/">
             Home
           </Link>
