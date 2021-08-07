@@ -11,7 +11,7 @@ const IndexPage = ({data}) => {
         <div className="columns">
           <div className="column is-4">
             <StaticImage
-              alt="Clifford, a reddish-brown pitbull, posing on a couch and looking stoically at the camera"
+              alt="Topeomot"
               src="../images/topeomot.jpg"
             />
           </div>

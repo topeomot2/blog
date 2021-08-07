@@ -1,5 +1,6 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
+import { StaticImage } from 'gatsby-plugin-image'
 import "../pages/mystyles.scss"
 
 const Layout = ({ pageTitle, children }) => {
@@ -34,8 +35,17 @@ const Layout = ({ pageTitle, children }) => {
             <Link className="navbar-item" to="/">
               Home
             </Link>
-            <a className="navbar-item" to="/blog">
-              Twitter
+            <a className="navbar-item" href="https://twitter.com/topeomot" target="_blank" rel="noreferrer">
+            <StaticImage
+              alt="@Topeomot Twitter"
+              src="../images/twitter.png"
+            />
+            </a>
+            <a className="navbar-item" href="https://github.com/topeomot2" target="_blank" rel="noreferrer">
+            <StaticImage
+              alt="@Topeomot2 Github"
+              src="../images/github.png"
+            />
             </a>
           </div>
         </div>
