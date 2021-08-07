@@ -4,7 +4,8 @@
 
 $title-font: 'Exo 2', sans-serif;
 $body-font: 'Merriweather Sans', sans-serif;
-
+$yellow: hsl(44, 100%, 77%);
+$purple: hsl(271, 100%, 71%);
 
 // If need, change your variables before importing Bulma
 $dark-bg: #202124;
@@ -17,5 +18,10 @@ $body-color: $font-color;
 $title-family: $title-font;
 
 $navbar-item-color: #ffffff;
+$link: $yellow;
+$link-hover: $purple;
+$content-heading-color: $yellow;
+$text-strong: #ffffff;
+$content-blockquote-background-color: #000000;
 
 @import "~bulma/bulma.sass";
