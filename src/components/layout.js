@@ -35,6 +35,12 @@ const Layout = ({ pageTitle, children }) => {
             <Link className="navbar-item" to="/">
               Home
             </Link>
+            <a className="navbar-item" href="https://www.linkedin.com/in/temitope-omotunde-b0981313/" target="_blank" rel="noreferrer">
+            <StaticImage
+              alt="@Topeomot LinkedIn"
+              src="../images/linkedin.png"
+            />
+            </a>
             <a className="navbar-item" href="https://twitter.com/topeomot" target="_blank" rel="noreferrer">
             <StaticImage
               alt="@Topeomot Twitter"
