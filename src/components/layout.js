@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { Link, useStaticQuery, graphql } from 'gatsby'
 import { StaticImage } from 'gatsby-plugin-image'
+import { OutboundLink } from "gatsby-plugin-google-gtag"
 import "../pages/mystyles.scss"
 
 const Layout = ({ pageTitle, children }) => {
@@ -35,24 +36,24 @@ const Layout = ({ pageTitle, children }) => {
             <Link className="navbar-item" to="/">
               Home
             </Link>
-            <a className="navbar-item" href="https://www.linkedin.com/in/temitope-omotunde-b0981313/" target="_blank" rel="noreferrer">
+            <OutboundLink className="navbar-item" href="https://www.linkedin.com/in/temitope-omotunde-b0981313/" target="_blank" rel="noreferrer">
             <StaticImage
               alt="@Topeomot LinkedIn"
               src="../images/linkedin.png"
             />
-            </a>
-            <a className="navbar-item" href="https://twitter.com/topeomot" target="_blank" rel="noreferrer">
+            </OutboundLink>
+            <OutboundLink className="navbar-item" href="https://twitter.com/topeomot" target="_blank" rel="noreferrer">
             <StaticImage
               alt="@Topeomot Twitter"
               src="../images/twitter.png"
             />
-            </a>
-            <a className="navbar-item" href="https://github.com/topeomot2" target="_blank" rel="noreferrer">
+            </OutboundLink>
+            <OutboundLink className="navbar-item" href="https://github.com/topeomot2" target="_blank" rel="noreferrer">
             <StaticImage
               alt="@Topeomot2 Github"
               src="../images/github.png"
             />
-            </a>
+            </OutboundLink>
           </div>
         </div>
       </nav>
