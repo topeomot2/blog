@@ -4,6 +4,7 @@ module.exports = {
     title: "Topeomot",
   },
   plugins: [
+    "gatsby-plugin-netlify",
     "gatsby-plugin-gatsby-cloud",
     "gatsby-plugin-image",
     "gatsby-plugin-sharp",
@@ -12,7 +13,7 @@ module.exports = {
       options: {
         name: `blog`,
         path: `${__dirname}/blog`,
-      }
+      },
     },
     "gatsby-plugin-mdx",
     "gatsby-plugin-sass",
